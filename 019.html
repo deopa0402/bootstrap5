@@ -16,61 +16,29 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .custom-popover {
+        --bs-popover-max-width: 200px;
+        --bs-popover-border-color: var(--bd-violet-bg);
+        --bs-popover-header-bg: var(--bd-violet-bg);
+        --bs-popover-header-color: var(--bs-white);
+        --bs-popover-body-padding-x: 1rem;
+        --bs-popover-body-padding-y: 0.5rem;
+      }
+    </style>
   </head>
   <body class="m-5">
     <button
       type="button"
-      class="btn btn-lg btn-danger"
-      data-bs-toggle="popover"
-      data-bs-title="Popover title"
-      data-bs-content="And here's some amazing content. It's very engaging. Right?"
-    >
-      Click to toggle popover
-    </button>
-
-    <p class="m-5"></p>
-
-    <button
-      type="button"
       class="btn btn-secondary"
-      data-bs-container="body"
-      data-bs-toggle="popover"
-      data-bs-placement="top"
-      data-bs-content="Top popover"
-    >
-      Popover on top
-    </button>
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-bs-container="body"
       data-bs-toggle="popover"
       data-bs-placement="right"
-      data-bs-content="Right popover"
+      data-bs-custom-class="custom-popover"
+      data-bs-title="Custom popover"
+      data-bs-content="This popover is themed via CSS variables."
     >
-      Popover on right
+      Custom popover
     </button>
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-bs-container="body"
-      data-bs-toggle="popover"
-      data-bs-placement="bottom"
-      data-bs-content="Bottom popover"
-    >
-      Popover on bottom
-    </button>
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-bs-container="body"
-      data-bs-toggle="popover"
-      data-bs-placement="left"
-      data-bs-content="Left popover"
-    >
-      Popover on left
-    </button>
-
     <script>
       const popoverTriggerList = document.querySelectorAll(
         '[data-bs-toggle="popover"]'
