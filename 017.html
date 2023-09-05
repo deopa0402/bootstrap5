@@ -26,16 +26,25 @@
         Launch modal
       </button>
 
-      <div class="modal" id="modal1" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
+      <div
+        class="modal fade"
+        id="modal1"
+        data-bs-backdrop="static"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+          <div class="modal-content" modal>
             <div class="modal-header">
               <h1 class="model-title fs-5">Modal Title</h1>
-              <button class="btn-close" data-bs-dismiss="modal"></button>
+              <button class="btn-close" data-bs-dismiss="modal" d></button>
             </div>
             <div class="modal-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              nihil pariatur quia nesciunt quos fuga!
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4">.col-md-4</div>
+                  <div class="col-md-4 ms-auto"></div>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
               <button class="btn btn-secondary" data-bs-dismiss="modal">
