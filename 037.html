@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나지금, 일 하는중</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .testimonials {
+        position: relative;
+        padding: 0;
+        background-color: rgba(94, 118, 224, 0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top"
+      style="background-color: rgba(94, 118, 224, 0.9)"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            id="title-logo"
+            src="https://work.now-i.am/assets/logo/white/work.now-i-am_white_00303.png"
+            alt="main_logo"
+            style="width: 90px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="https://now-i.am"
+                >나 지금</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >나 지금, 일하는중</a
+              >
+            </li>
+          </ul>
+          <button
+            class="btn btn-light border border-radius"
+            onclick="location.href='./dash/';"
+          >
+            작업 시작
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="intro-section"
+      style="
+        background-color: #5e76e0;
+        padding: 10rem 0 0 0;
+        width: 100%;
+        height: 100%;
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <div class="col-12 col-md-6 intros text-start">
+            <h1 class="display-2">
+              <span
+                class="display-2"
+                style="font-weight: 700; font-family: Poppins, sans-serif"
+                >나 지금? 일 하는중.</span
+              >
+              <br />
+              <span
+                class="display-2"
+                style="
+                  background-color: #5e76e0;
+                  font-size: 16px;
+                  font-weight: 400;
+                  display: block;
+                  text-transform: none;
+                "
+                ><span id="who-are-you">학교에서 수업듣는 학생도</span>, 오늘은
+                인공지능 선생님?
+                <br />
+                이거 진짜 쉬운데 같이 해볼래?</span
+              >
+            </h1>
+            <button
+              type="button"
+              class="rounded-pill btn-rouned btn btn-light border border-radius"
+              style="
+                padding: 0.8375rem;
+                font-weight: 700;
+                margin: 0;
+                border: 0.1rem solid rgba(255, 255, 255, 0.6);
+                background-color: #ffffff;
+                display: 0;
+              "
+              onclick="location.href='./dash/';"
+            >
+              나도 해볼래!
+              <span
+                ><i style="font-family: 'Font Awesome 5 Free'; font-weight: 900"
+                  ></i
+                ></span
+              >
+            </button>
+          </div>
+          <div class="col-12 col-md-6 intros text-end my-4 my-md-0">
+            <video
+              src="https://work.now-i.am/assets/Video/01.mp4"
+              class="w-100 border"
+              controls
+              id="video"
+            ></video>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">
+            나 지금은 지금, 여러분의 지금이 필요합니다!
+          </h1>
+          <div class="heading-line mb-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <h3
+                class="display-3"
+                style="
+                  font-size: 1.2rem;
+                  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+                  text-transform: capitalize;
+                  font-weight: 600;
+                  font-family: Poppins, sans-serif;
+                  display: inline-block;
+                  background-image: linear-gradient(
+                    to right,
+                    rgb(94, 118, 224),
+                    #d122e3
+                  );
+                  color: transparent;
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  color: transparent;
+                "
+              >
+                한국형 데이터 수집
+              </h3>
+              <p
+                class="lh-lg"
+                style="
+                  text-transform: capitalize;
+                  font-weight: 600;
+                  font-size: 0.8rem;
+                  font-family: 'MinSans';
+                  box-sizing: border-box;
+                  margin: 0px, 0px, 16px;
+                  padding: 0;
+                  display: block;
+                  margin-block-start: 1em;
+                  margin-block-end: 1em;
+                  margin-inline-start: 0px;
+                  margin-inline-end: 0px;
+                "
+              >
+                이미 세상에는 사물을 인식하는 인공지능이 정말 많은데요, <br />
+                아직까지 대한민국만의 특징이 담겨있는 사물들을<br />
+                읽을 수 있는 인공지능은 많이 없다고 합니다.
+              </p>
+              <p class="lh-lg">우리가 어떻게 이 문제를 해결할 수 있을까요?</p>
+              <button
+                class="btn btn-primary border"
+                style="background-color: #5e76e0"
+                onclick="location.href='?_=projects&p=1';"
+              >
+                돈도 벌고 문제도 해결 해보기
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+          >
+            <div class="services__pic">
+              <img
+                src="https://work.now-i.am/images/proj_1.png"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <h3
+                class="display-3--title mt-1"
+                style="
+                  font-size: 1.2rem;
+                  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+                  text-transform: capitalize;
+                  font-weight: 600;
+                  font-family: Poppins, sans-serif;
+                  display: inline-block;
+                  background-image: linear-gradient(
+                    to right,
+                    rgb(94, 118, 224),
+                    #d122e3
+                  );
+                  color: transparent;
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  color: transparent;
+                "
+              >
+                스타일별 패션데이터 수집
+              </h3>
+              <p
+                class="lh-lg"
+                style="
+                  text-transform: capitalize;
+                  font-weight: 600;
+                  font-size: 0.8rem;
+                  font-family: 'MinSans';
+                  box-sizing: border-box;
+                  margin: 0px, 0px, 16px;
+                  padding: 0;
+                  display: block;
+                  margin-block-start: 1em;
+                  margin-block-end: 1em;
+                  margin-inline-start: 0px;
+                  margin-inline-end: 0px;
+                "
+              >
+                최근 유행중인 스타일이 무엇인지 알려주는 <br />
+                인공지능을 만드려고 해요! 스타일을 추천받을 <br />
+                생각에 벌써부터 설레이는데요!
+              </p>
+              <p class="lh-lg">하지만 여러분들의 도움없이는 불가능합니다!</p>
+              <button
+                class="btn btn-primary border"
+                style="background-color: #5e76e0"
+                onclick="location.href='?_=projects&p=2';"
+              >
+                돈도 벌고 문제도 해결 해보기
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+          >
+            <div class="services__pic">
+              <img
+                src="https://work.now-i.am/images/proj_2.png"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="my-5"></div>
+          <div class="col"></div>
+          <div class="col-6">
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill form-control"
+              style="background-color: #5e76e0"
+            >
+              <h1 class="display-5 mb-0" style="font-family: 'MinSans'">
+                도전해보세요!
+              </h1>
+            </button>
+          </div>
+          <div class="col"></div>
+          <div class="my-5"></div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row text-center text-white">
+          <h1 class="display-3 fw-bold">항상 흥미로운 미션</h1>
+          <hr style="width: 100px; height: 3px; " class="mx-auto">
+        </div>
+        <div class="row pt-2 pb-2 mt-0 mb-3">
+            <div class="col-12 col-md-8">
+                <div class="p-3">
+                    <style>
+                        .mission-img{
+                            width: 100%;
+                        }
+                    </style>
+                    <div class="row">
+                                                <div class="col-12 col-lg-4 h-100 my-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8xX2JpY3ljbGUuanBn" class="mission-img mb-2">
+                                    <span class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2">
+                                        탈것                                    </span>
+                                    <p class="card-title h5 d-block text-darker mb-0">
+                                        도심속 자전거 찾기                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-12 col-lg-4 h-100 my-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8xX2NhdC5qcGc=" class="mission-img mb-2">
+                                    <span class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2">
+                                        동물                                    </span>
+                                    <p class="card-title h5 d-block text-darker mb-0">
+                                        고양이를 찍어봅시다!                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-12 col-lg-4 h-100 my-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8xX3NlZGFuLmpwZw==" class="mission-img mb-2">
+                                    <span class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2">
+                                        탈것                                    </span>
+                                    <p class="card-title h5 d-block text-darker mb-0">
+                                        승용차를 찍어볼까요                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-12 col-lg-4 h-100 my-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8zX3dfdHYuanBn" class="mission-img mb-2">
+                                    <span class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2">
+                                        사람                                    </span>
+                                    <p class="card-title h5 d-block text-darker mb-0">
+                                        여성 패션                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-12 col-lg-4 h-100 my-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8xX21vdG9yY3ljbGUobm9ybWFsKS5qcGc=" class="mission-img mb-2">
+                                    <span class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2">
+                                        탈것                                    </span>
+                                    <p class="card-title h5 d-block text-darker mb-0">
+                                        멋진 오토바이를 촬영해봅시다                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-12 col-lg-4 h-100 my-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8zX21fdHYuanBn" class="mission-img mb-2">
+                                    <span class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2">
+                                        사람                                    </span>
+                                    <p class="card-title h5 d-block text-darker mb-0">
+                                        남성 패션                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 text-white">
+                            <h2 class="text-capitalize text-end">
+                                미션 수행마다<br>차곡차곡 쌓이는 수입!
+                            </h2>
+                        </div>
+                    </div>
+                        
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

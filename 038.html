@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나지금, 일 하는중</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            id="title-logo"
+            src="https://work.now-i.am/assets/logo/white/work.now-i-am_white_00356.png"
+            alt="main_logo"
+            style="width: 90px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="https://now-i.am"
+                >나 지금</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >나 지금, 일하는중</a
+              >
+            </li>
+          </ul>
+          <button
+            class="btn btn-light border border-radius"
+            onclick="location.href='./dash/';"
+          >
+            작업 시작
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <div class="col-12 col-md-6 intros text-start">
+            <h1 class="display-2">
+              <span class="display-2--intro">나 지금? 일 하는중.</span>
+              <br />
+              <span class="display-2--description lh-base">
+                <span id="who-are-you">학교에서 수업듣는 학생도</span>, 오늘은
+                인공지능 선생님? <br />이거 진짜 쉬운데, 같이 해볼래?
+              </span>
+              <script>
+                $(document).ready(function () {
+                  var wy = [
+                    "오늘 학교 수업 마친 학생도",
+                    "아이들 재우고 쉬는 주부도",
+                    "열일 후 퇴근길의 직장인도",
+                  ];
+                  var wdx = 1;
+                  setInterval(function () {
+                    $("#who-are-you").text(wy[wdx]);
+                    wdx++;
+                    if (wdx == wy.length) {
+                      wdx = 0;
+                    }
+                  }, 5000);
+                });
+              </script>
+            </h1>
+            <button
+              type="button"
+              class="rounded-pill btn-rounded"
+              onclick="location.href='./dash/';"
+            >
+              나도 해볼래! <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+          <div class="col-12 col-md-6 intros text-end my-4 my-md-0">
+            <video
+              src="https://work.now-i.am/assets/Video/01.mp4"
+              class="w-100 border"
+              controls
+              id="video"
+            ></video>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">
+            나 지금은 지금, 여러분의 지금이 필요합니다!
+          </h1>
+          <div class="heading-line mb-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <h3 class="display-3--title mt-1">한국형 데이터 수집</h3>
+              <p class="lh-lg">
+                이미 세상에는 사물을 인식하는 인공지능이 정말 많은데요,
+                <br />
+                아직까지 대한민국만의 특징이 담겨있는 사물들을<br />
+                읽을 수 있는 인공지능은 많이 없다고 합니다.
+              </p>
+              <p class="lh-lg">우리가 어떻게 이 문제를 해결할 수 있을까요?</p>
+              <button
+                class="btn btn-primary border"
+                onclick="location.href='?_=projects&p=1';"
+              >
+                돈도 벌고 문제도 해결 해보기
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+          >
+            <div class="services__pic">
+              <img
+                src="https://work.now-i.am/images/proj_1.png"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <h3 class="display-3--title mt-1">스타일별 패션데이터 수집</h3>
+              <p class="lh-lg">
+                최근 유행중인 스타일이 무엇인지 알려주는 <br />
+                인공지능을 만드려고 해요! 스타일을 추천받을 <br />
+                생각에 벌써부터 설레이는데요!
+              </p>
+              <p class="lh-lg">하지만 여러분들의 도움없이는 불가능합니다!</p>
+              <button
+                class="btn btn-primary border"
+                onclick="location.href='?_=projects&p=2';"
+              >
+                돈도 벌고 문제도 해결 해보기
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+          >
+            <div class="services__pic">
+              <img
+                src="https://work.now-i.am/images/proj_2.png"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="my-5"></div>
+          <div class="col"></div>
+          <div class="col-6">
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill form-control pt-3 pb-3"
+            >
+              <h1 class="display-5 mb-0">도전해보세요!</h1>
+            </button>
+          </div>
+          <div class="col"></div>
+          <div class="my-5"></div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row text-center text-white">
+          <h1 class="display-3 fw-bold">항상 흥미로운 미션</h1>
+          <hr style="width: 100px; height: 3px" class="mx-auto" />
+        </div>
+        <div class="row pt-2 pb-2 mt-0 mb-3">
+          <div class="col-12 col-md-8">
+            <div class="p-3">
+              <style>
+                .mission-img {
+                  width: 100%;
+                }
+              </style>
+              <div class="row">
+                <div class="col-12 col-lg-4 h-100 my-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8xX2JpY3ljbGUuanBn"
+                        class="mission-img mb-2"
+                      />
+                      <span
+                        class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2"
+                      >
+                        탈것
+                      </span>
+                      <p class="card-title h5 d-block text-darker mb-0">
+                        도심속 자전거 찾기
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 h-100 my-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8xX2NhdC5qcGc=          ="
+                        class="mission-img mb-2"
+                      />
+                      <span
+                        class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2"
+                      >
+                        동물
+                      </span>
+                      <p class="card-title h5 d-block text-darker mb-0">
+                        고양이를 찍어봅시다!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 h-100 my-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8xX3NlZGFuLmpwZw=="
+                        class="mission-img mb-2"
+                      />
+                      <span
+                        class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2"
+                      >
+                        탈것
+                      </span>
+                      <p class="card-title h5 d-block text-darker mb-0">
+                        승용차를 찍어볼까요
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 h-100 my-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8zX3dfdHYuanBn"
+                        class="mission-img mb-2"
+                      />
+                      <span
+                        class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2"
+                      >
+                        사람
+                      </span>
+                      <p class="card-title h5 d-block text-darker mb-0">
+                        여성 패션
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 h-100 my-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8xX21vdG9yY3ljbGUobm9ybWFsKS5qcGc="
+                        class="mission-img mb-2"
+                      />
+                      <span
+                        class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2"
+                      >
+                        탈것
+                      </span>
+                      <p class="card-title h5 d-block text-darker mb-0">
+                        멋진 오토바이를 촬영해봅시다
+                      </p>
+                    </div>
+                    `
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 h-100 my-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="https://work.now-i.am/dash/rescue/resource/?_t=mc&_a=bV8zX21fdHYuanBn"
+                        class="mission-img mb-2"
+                      />
+                      <span
+                        class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2"
+                      >
+                        사람
+                      </span>
+                      <p class="card-title h5 d-block text-darker mb-0">
+                        남성 패션
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 text-white">
+              <h2 class="text-capitalize text-end">
+                미션 수행마다<br />차곡차곡 쌓이는 수입!
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mt-5 row text-center text-white">
+          <div class="my-5"></div>
+          <div class="my-5"></div>
+          <h1 class="display-3 fw-bold">여기는 지금,</h1>
+          <hr style="width: 100px; height: 3px" class="mx-auto" />
+          <p class="lead pt-1">다양한 "지금"들이 함께하고 있습니다!</p>
+        </div>
+
+        <div class="row align-items-center">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    학교수업 끝나고, 집가는 길 버스에서 간단하게 하는걸로
+                    용돈벌이 하고 있어요! 제가 하기에도 내용이 어렵지 않고
+                    방법도 간단해서 할만하더라구요
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>hyeaj***</h3>
+                  <p class="fw-light">학생</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    생활비에 보탬이 될만한 부업을 찾다가 알게되어 하고 있는데요
+                    여유시간 날 때 조금 더 시간을 투자하니 한달 식비정도는 챙길
+                    수 있었어요. 괜찮은 것 같아요
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>rainb*****</h3>
+                  <p class="fw-light">전업주부</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    평소에 일상 사진 찍는 걸 즐겨 하는데, 좋아하는 사진도 찍고
+                    용돈도 벌고 일석이조라서 너무 좋아요
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>soyoo****</h3>
+                  <p class="fw-light">대학생</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    평소에 너무 바빠서 자율적으로 할 수 있는 부업을 찾아보고
+                    있었는데, 간단한 사진 찍는 것만으로 돈을 벌 수 있다니! 너무
+                    좋은 부업을 찾은 것 같아요
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>kimming***</h3>
+                  <p class="fw-light">직장인</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    같은 반 친구 추천으로 시작해 보게 되었는데, 하는 방법도
+                    간단하고 용돈벌이하기 좋아서 요즘 저도 다른 친구들한테
+                    추천해 주고 있어요 <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>snowwh***</h3>
+                  <p class="fw-light">학생</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    사진 찍는 알바는 처음이라 많이 걱정했었는데, 상담해 주시는
+                    분도 친절하시고 몇 번 해보니까 생각보다 정말 쉽고
+                    간편하더라고요. 앞으로도 쭉 이용할 것 같아요.
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>woosung***</h3>
+                  <p class="fw-light">취업 준비생</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    요즘 저희 딸아이랑 매일 산책하면서 사진 찍고 있어요 사진
+                    찍는 아이도 즐거워하고 이 사진으로 아이들 간식비도 할 수
+                    있어서 주부로서 너무 좋은 것 같아요
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>smileyun****</h3>
+                  <p class="fw-light">전업주부</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    밥 먹을 때, 동네 걸을 때, 어디 놀러 가거나 외식할 때 등등
+                    모든 상황에서 사진을 많이 찍다 보니, 나중엔 벌이가 꽤
+                    되더라고요 저에게 딱 맞는 부업인 것 같아요
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>leejinh***</h3>
+                  <p class="fw-light">프리랜서</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    최근 들어 사진 찍는 취미가 생겼는데, 취미와 부업을
+                    연결시키니 너무 만족스럽네요. 방법도 어렵지 않고 남녀노소
+                    누구나 할 수 있을 것 같아서 추천드려요
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="testimonials__name">
+                  <h3>harrya***</h3>
+                  <p class="fw-light">전업주부</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button
+                class="btn btn-outline-light fas fa-long-arrow-alt-left"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="btn btn-outline-light fas fa-long-arrow-alt-right"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <section id="contact" class="portfolio">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-capitalize">흥미가, 생기셨나요?</h1>
+          <div class="heading-line"></div>
+          <p class="lh-lg">지금부터 당신도, 인공지능 선생님?</p>
+          <div class="my-5"></div>
+          <div class="my-5"></div>
+          <div class="col"></div>
+          <div class="col-6">
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill form-control pt-3 pb-3"
+              onclick="location.href='./dash/';"
+            >
+              <h1 class="display-5 mb-0">도전해보세요!</h1>
+            </button>
+          </div>
+          <div class="col"></div>
+          <div class="my-5"></div>
+          <div class="my-5"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container mt-5">
+        <div class="row text-white justify-content-center mt-3 pb-3">
+          <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+            <h5 class="text-capitalize fw-bold">나 지금</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 60px; height: 2px"
+            />
+            <p class="lh-lg">
+              여러분들의 지금을 함께하는 신개념 플랫폼, "나 지금"
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+            <h5 class="text-capitalize fw-bold">서비스</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 60px; height: 2px"
+            />
+            <ul class="list-inline campany-list">
+              <li>
+                <a href="https://now-i.am">나 지금, 내 일상 공유 하는중</a>
+              </li>
+              <li><a href="/">나 지금, 일 하는중</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom pt-5 pb-5">
+        <div class="container">
+          <div class="row text-center text-white">
+            <div class="col-12">
+              <div class="footer-bottom__copyright">
+                &COPY; Copyright 2022
+                <a href="https://now-i.am">now-i.am</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        href: "https://www.youtube.com/watch?v=J9lS14nM1xg",
+        type: "video",
+        source: "youtube",
+        width: 900,
+        autoPlayVideos: "true",
+      });
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
